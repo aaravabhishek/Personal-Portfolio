@@ -994,3 +994,172 @@ animation: scroll 10s linear infinite;
 .skills-section { animation-delay: 0.1s; }
 .about-section { animation-delay: 0.15s; }
 .footer-content { animation-delay: 0.2s; }
+
+
+
+
+/* ===============================
+   RESPONSIVE FIXES (CSS ONLY)
+   =============================== */
+
+/* Tablets & below */
+@media (max-width: 1024px) {
+
+  /* NAVBAR */
+  .navbar {
+    flex-wrap: wrap;
+    padding: 14px 20px;
+  }
+
+  .menu {
+    gap: 20px;
+  }
+
+  /* HERO TEXT */
+  :root {
+    --font-size: 2.4rem;
+  }
+
+  /* ABOUT POSTER */
+  .bg-title {
+    font-size: 100px;
+  }
+
+  .person {
+    height: 420px;
+    right: 10%;
+  }
+
+  .name-pill {
+    left: 40px;
+  }
+
+  .handwritten {
+    left: 140px;
+    font-size: 16px;
+  }
+
+  .year-pill {
+    right: 40px;
+    bottom: 80px;
+  }
+
+  /* PROJECTS */
+  .projects {
+    flex-wrap: wrap;
+  }
+}
+
+
+/* Mobile devices */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar button {
+    margin-top: 10px;
+  }
+
+  /* HERO */
+  .name {
+    padding: 20px;
+  }
+
+  :root {
+    --font-size: 1.9rem;
+  }
+
+  .nowrap {
+    white-space: normal;
+  }
+
+  /* ABOUT POSTER */
+  .about-poster {
+    height: auto;
+    padding: 120px 20px 60px;
+  }
+
+  .bg-title {
+    position: static;
+    transform: none;
+    font-size: 72px;
+    text-align: center;
+  }
+
+  .person {
+    position: static;
+    display: block;
+    margin: 40px auto 0;
+    height: 320px;
+  }
+
+  .name-pill,
+  .handwritten,
+  .year-pill {
+    position: static;
+    transform: none;
+    margin: 16px auto;
+    text-align: center;
+  }
+
+  /* ABOUT SECTION */
+  .about-title {
+    font-size: 64px;
+  }
+
+  .about-image img {
+    height: 50vh;
+  }
+
+  /* SKILLS */
+  .marquee {
+    width: 95%;
+  }
+
+  /* PROJECTS */
+  .projects {
+    padding: 120px 20px 60px;
+  }
+
+  .projects-title {
+    font-size: 2.2rem;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 320px;
+  }
+}
+
+
+/* Small phones */
+@media (max-width: 480px) {
+
+  :root {
+    --font-size: 1.6rem;
+  }
+
+  .about-title {
+    font-size: 48px;
+  }
+
+  .bg-title {
+    font-size: 56px;
+  }
+
+  .signature {
+    font-size: 32px;
+  }
+
+  .overlay h3 {
+    font-size: 18px;
+  }
+
+  .overlay p {
+    font-size: 13px;
+  }
+}
